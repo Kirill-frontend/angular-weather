@@ -2,14 +2,14 @@
   scrollbar-width: none;
 }
 
-.bg-blur {
-  backdrop-filter: blur(7px);
-}
-
 .hidden-scroll::-webkit-scrollbar {
   width: 0;
   height: 0;
 }
+.bg-blur {
+  backdrop-filter: blur(7px);
+}
+
 
 .padding-r-12 {
   padding-right: 12rem!important;
