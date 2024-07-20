@@ -34,7 +34,7 @@ export class AppComponent {
   }
 
   changeCity(city: string) {
-    this.http.get<ICity[]>(`http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${environment.appid}`).subscribe((data) => {
+    this.http.get<ICity[]>(`https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${environment.appid}`).subscribe((data) => {
       const {lat, lon} = data[0]
       this.fetchWeather({ latitude: lat, longitude: lon})
     })
