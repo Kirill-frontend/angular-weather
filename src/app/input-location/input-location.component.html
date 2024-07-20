@@ -1,0 +1,8 @@
+<div class="border-b border-white md:w-full w-32" [ngClass]="classes">
+  <form class="relative" (submit)="getLocation(city_input)">
+
+    <input type="text" name="city" id="search" placeholder="Search Location" autocomplete="off"  #city_input
+      class="border-none text-white bg-transparent pb-1 placeholder:text-white outline-none">
+    <label for="search" class="absolute top-1 right-0 w-4 h-4"> <img src="/search.png" alt="search icon "> </label>
+  </form>
+</div>
